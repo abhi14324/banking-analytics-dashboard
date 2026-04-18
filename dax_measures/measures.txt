@@ -1,0 +1,20 @@
+Account Count by Type = COUNT(CombinedBankingDataset[Account_AccountID])
+
+Avg Transaction Amount = AVERAGE(CombinedBankingDataset[Amount])
+
+Count of Transaction = COUNT(CombinedBankingDataset[TransactionID])
+
+Customer Count by Gender = DISTINCTCOUNT(CombinedBankingDataset[CustomerID])
+
+Inactive Accounts = CALCULATE(DISTINCTCOUNT(CombinedBankingDataset[Account_AccountID]), FILTER(VALUES(CombinedBankingDataset[Account_AccountID]), CALCULATE(MAX(CombinedBankingDataset[TransactionDate])) < TODAY()-90))
+
+Monthly Transaction Amount = CALCULATE(SUM(CombinedBankingDataset[Amount]), ALLEXCEPT(CombinedBankingDataset, CombinedBankingDataset[TransactionDate].[Month]))
+
+Monthly Transaction Balance = CALCULATE(SUM(CombinedBankingDataset[Balance]), ALLEXCEPT(CombinedBankingDataset, CombinedBankingDataset[TransactionDate].[Month]))
+
+
+Total Balance = SUM(CombinedBankingDataset[Balance])
+
+Total Transactions = COUNTROWS(CombinedBankingDataset)
+
+Unique Customers = DISTINCTCOUNT(CombinedBankingDataset[Name])
