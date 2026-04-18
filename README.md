@@ -198,7 +198,7 @@ Live Dashboard Power BI Service Link : https://app.powerbi.com/groups/90e27ec9-c
 ---
 
 ## Screenshots
-![banking-analytics-dashboard-powerbi](screenshots)
+![banking-analytics-dashboard](screenshots)
 
 
 --
