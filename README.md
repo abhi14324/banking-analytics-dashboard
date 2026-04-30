@@ -22,6 +22,34 @@ The project combines:
 
 ---
 
+## ❓ Problem Statement
+
+Traditional banking operations generate large volumes of transactional 
+data daily, but without proper analysis tools, it becomes difficult for 
+banking managers to monitor account performance, track customer behavior, 
+and identify inactive accounts in real time.
+
+This project addresses the following challenges:
+
+- Banks lack a centralized view of total account balances across 
+  Savings and Current account types.
+  
+- There is no easy way to identify inactive accounts (no transactions 
+  in 90+ days) which leads to revenue loss.
+  
+- Customer segmentation data (age group, gender, city) is scattered 
+  across multiple tables with no unified reporting layer.
+  
+- Monthly transaction trends are not tracked, making it hard to detect 
+  peak and low activity periods.
+
+To solve these problems, this project builds an end-to-end Banking 
+Analytics Dashboard using SQL Server for data engineering and 
+Power BI for interactive reporting — giving banking teams a 
+single-window view of all critical operational metrics.
+
+---
+
 ## 🎯 Project Objectives
 
 This project answers key business questions such as:
@@ -341,7 +369,7 @@ Power BI Service enables:
 
 ## 👤 Author
 
-**Abhi**
+**Abhishek Kumar**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/abhishek-kumar-a53b46309)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/abhi14324)
